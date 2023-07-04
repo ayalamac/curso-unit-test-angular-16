@@ -38,9 +38,4 @@ describe('DescuentoService', () => {
     expect(() => service.calcularDescuento(valorCompra)).toThrowError('El valor de compra debe ser un número mayor a cero.');
   })
 
-  it('DEBE lanzar error SI el valor ingresado no es un número', () => {
-    const valorCompra = 'INVÁLIDO';
-    expect(() => service.calcularDescuento(valorCompra as any)).toThrowError('El valor de compra debe ser un número mayor a cero.')
-  })
-
 });

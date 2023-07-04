@@ -13,10 +13,6 @@ export class DescuentoService {
       throw new Error('El valor de compra debe ser un número mayor a cero.');
     }
 
-    if (typeof valorCompra !== 'number') {
-      throw new Error('El valor de compra debe ser un número mayor a cero.');
-    }
-
     if (valorCompra > 80 && valorCompra <= 140) {
       return valorCompra * 0.05;
     }
